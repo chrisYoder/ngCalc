@@ -1,0 +1,107 @@
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+.container {
+	display: grid;
+	grid-template-areas: '. calculator .';
+}
+.calculator {
+	border: 1px solid grey;
+	border-radius: 5px;
+	padding: 5px;
+	grid-area: calculator;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(6, 50px);
+	grid-template-areas:	
+		'screen screen screen screen'
+		'plus minus times divide'
+		'seven eight nine equal'
+		'four five six equal'
+		'one two three equal'
+		'zero decimal clear equal';
+	grid-gap: 10px
+}
+
+.calculator-screen {
+	grid-area: screen;
+	background-color: black;
+	color: white;
+	display: grid;
+	text-align: right;
+	padding: 5px;
+}
+
+.plus {
+	grid-area: plus;
+}
+
+.minus {
+	grid-area: minus;
+}
+
+.multiply {
+	grid-area: times;
+}
+
+.divide {
+	grid-area: divide;
+}
+
+.Seven {
+	grid-area: seven;
+}
+
+.Eight {
+	grid-area: eight;
+}
+
+.Nine {
+	grid-area: nine;
+}
+
+.Four { 
+	grid-area: four;
+}
+
+.Five {
+	grid-area: five;
+}
+
+.Six {
+	grid-area: six;
+}
+
+.One {
+	grid-area: one;
+}
+
+.Two {
+	grid-area: two;
+}
+
+.Three { 
+	grid-area: three;
+}
+
+.Zero {
+	grid-area: zero;
+}
+
+.decimal {
+	grid-area: decimal;
+}
+
+.all-clear {
+	grid-area: clear;
+	background-color: red;
+	color: white;
+}
+
+.equal-sign {
+	grid-area: equal;
+	background-color: blue;
+	color: white;
+}
